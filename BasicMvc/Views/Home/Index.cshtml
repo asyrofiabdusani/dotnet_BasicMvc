@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>@ViewBag.TitlePage</h1>
+    @{ if (ViewBag.WhoAmi == "Admin")
+        {
+            <p>You can explore the application</p>
+        }
+        else
+        {
+            <p>You don't have autorize to explore the application</p>
+        }
+    }
+</body>
+</html>

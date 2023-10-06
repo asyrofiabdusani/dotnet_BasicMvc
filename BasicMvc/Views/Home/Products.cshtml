@@ -1,0 +1,22 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Products</title>
+</head>
+<body>
+    <h1>Product Page</h1>
+    <h3>For Loop</h3>
+    @for (int i = 0; i < @ViewBag.products.Count; i++)
+    {
+        <p>@ViewBag.products[i]</p>
+    }
+    <h3>Foreach</h3>
+    @foreach (var item in ViewBag.products)
+    {
+        <p>@item</p>
+    }
+</body>
+</html>
